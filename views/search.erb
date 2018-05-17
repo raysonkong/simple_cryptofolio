@@ -1,0 +1,12 @@
+<h2>Search Result for '<%= @coin %>'</h2>
+<% if @results.empty? %>
+  <p>No Match, please try again</p>
+<% else %>
+  <ul>
+  	<% @results.each do |result| %>
+  	  <li>
+  	  	<a href="/market/<%= result %>"><%= result %></a>
+  	  </li>
+  	<% end %>
+  </ul>
+<% end %>
