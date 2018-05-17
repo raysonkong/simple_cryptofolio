@@ -1,6 +1,9 @@
 # A simple Cryptocurrency portfolio App
  - in development
 
+#Notes for Sohail
+- git versioning
+
 # Notes for development
 built with  Sinatra, ruby's micro web framework
 
