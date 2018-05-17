@@ -1,5 +1,5 @@
 # A simple Cryptocurrency portfolio App
-
+ - in development
 
 # Notes for development
 built with  Sinatra, ruby's micro web framework
@@ -8,7 +8,7 @@ built with  Sinatra, ruby's micro web framework
 Poloniex API call:
 https://poloniex.com/public?command=returnTicker
 
-# to start sinatra server
+# To start sinatra server
 $ bundle exec ruby server.rb -o 0.0.0.0
 
 # Features to be developed:
