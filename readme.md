@@ -14,6 +14,7 @@ $ bundle exec ruby server.rb -o 0.0.0.0
 # Features to be developed:
 - Add a favorite coin section
 - round prices to 3 or 4 decimal point
+- git pull problem?
 
 
 
