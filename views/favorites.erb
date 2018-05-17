@@ -1,0 +1,9 @@
+<h2>My Favorites</h2>
+<ul>
+  <% @favorites.each do |fav| %>
+    <li>
+    	<a href="/market/<%= fav %>"><%= fav %></a>
+    	<%= @fav_price[fav]['ask'] %>
+    </li>
+  <% end %>
+</ul>

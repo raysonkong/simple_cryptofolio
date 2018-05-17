@@ -21,8 +21,9 @@ get '/' do
   if !MARKETS
     MARKETS= get_markets
   end
-  
-  @markets = MARKETS  
+
+  @USDT_BTC = get_ticker_price("USDT_BTC")
+  @markets = MARKETS
   erb(:home)
 end
 
@@ -42,4 +43,17 @@ get '/search' do
   end
 
   erb(:search)
+end
+
+get '/favorites' do
+  @favorites = ['USDT_BTC', 'BTC_LTC', 'USDT_ETH', 'BTC_ETH']
+  
+  @btc_price = get_ticker_price('USDT_BTC')
+
+  @fav_price = {}
+  @favorites.each do |fav|
+    @fav_price[fav] = get_ticker_price(fav)
+  end
+
+  erb :favorites, layout: :layout
 end

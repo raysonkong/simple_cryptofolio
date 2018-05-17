@@ -18,7 +18,7 @@ def get_ticker_price(currency_pair)
   currency_data_hash = market_data_hash[currency_pair]
   currency_data_ask = currency_data_hash["lowestAsk"]
   currency_data_bid = currency_data_hash["highestBid"]
-  currency_data_last = currency_data_hash["last"] 
+  currency_data_last = currency_data_hash["last"]
   {"ask" => currency_data_ask, "bid" => currency_data_bid,"last" => currency_data_last}
   
 end

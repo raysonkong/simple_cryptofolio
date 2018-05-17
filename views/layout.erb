@@ -18,6 +18,8 @@
           <span></span>
       </a>
 
+      <!-- LHS Menu -->
+
       <div id="menu">
           <div class="pure-menu">
               <a class="pure-menu-heading" href="/">Cryptocurrenies</a>
@@ -28,6 +30,11 @@
                 </label>
                 <input type="submit" value="search"/>
               </form>
+
+              <h3>
+                <a href="/favorites">Favorites</a>
+              </h3>
+
               <ul class="pure-menu-list">
                 <% @markets.each do |market| %>             
                   <li class="pure-menu-item">
@@ -40,12 +47,18 @@
           </div>
       </div>
 
+      <!-- HEADER -->
+
       <div id="main">
         <div class="header">
           <h1>Cryptocurrency</h1>
         </div>
 
-        <%= yield %>
+        <!-- Content -->
+
+        <div class="content">
+          <%= yield %>
+        </div>
 
       </div>
   </div>
