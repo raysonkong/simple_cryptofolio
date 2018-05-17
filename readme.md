@@ -1,12 +1,10 @@
-#####################################
-A simple Cryptocurrency portfolio App
-####################################
-
+# A simple Cryptocurrency portfolio App
 
 
 # Notes for development
 built with  Sinatra, ruby's micro web framework
 
+# API Used
 Poloniex API call:
 https://poloniex.com/public?command=returnTicker
 
