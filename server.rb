@@ -34,6 +34,8 @@ get '/market/:currency_pair' do
   erb(:ticker_price)
 end
 
+
+# request -> parse_request -> controller[check auth? perform some function to get result -> serialized]  -> response
 get '/search' do
   @coin = params[:search_coin].downcase
 
